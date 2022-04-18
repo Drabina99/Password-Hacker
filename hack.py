@@ -34,7 +34,7 @@ def brute_force(client_socket):
         password_length += 1
 
 
-def guess_password_with_dictionary(client_socket):
+def dictionary_brute_force(client_socket):
     with open('passwords.txt', 'r') as dictionary:
         for word in dictionary:
             word = word.strip('\n')
